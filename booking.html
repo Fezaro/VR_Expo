@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <title>IN VR | Booking</title>
+</head>
+<body>
+    <header id="main-nav">
+        <nav class="nav">
+            <img id="logo" src="images/logos/IN_VR_logos_black.png" alt="IN VR expo">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="showcases.html">Showcase Hall</a></li>
+                <li><a href="booking.html">Booking</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="guestbook.html">GuestBook</a></li>
+                <li><a href="design.html">Design Summary</a></li>
+                <li><a href="mysite.html">About Me</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="booking-content" class="center">
+        <h1 class="text-center">Ticket Booking</h1>
+        <form id="ticket-form" action="">
+            <section>
+            <fieldset>
+                <legend>Ticket Information</legend>
+                <p>
+                  <label for="name">Name:</label>
+                  <strong><abbr title="required">*</abbr></strong>
+                  <input type="text" id="name" name="name" required>
+                </p>
+                <p>
+                  <label for="phone-number">Phone Number:</label>
+                  <strong><abbr title="required">*</abbr></strong>
+                  <input type="tel" id="phone-number" name="phone-number" required>
+                </p>
+                <p>
+                    <label for="email">E-mail</label>
+                    <strong><abbr title="required">*</abbr></strong>
+                    <input type="email" name="email" id="email">
+                </p>
+                <p>
+                    <label for="seatNo">Number of seats</label>
+                    <strong><abbr title="required">*</abbr></strong>
+                    <input type="number" name="seatNo" id="seatNo">
+                </p>
+
+            </fieldset>
+            <fieldset>
+                <legend>Event Dates</legend>
+                    <p>
+                        <label for="saturday">Saturday</label>
+                        <input type="checkbox" name="eventDate" id="saturday">
+                    </p>
+                    <p>
+                        <label for="sunday">Sunday</label>
+                        <input type="checkbox" name="eventDate" id="sunday">
+                    </p>
+                
+            </fieldset>
+        </section>
+            <section>
+                <h2>Payment Details</h2>
+                <fieldset>
+                    <legend>Payment type</legend>
+                    <p>Select a Payment method:</p>
+                    <p>
+                        <label for="payment-type">M-PESA</label>
+                        <input type="radio" name="payment" id="payment-type" value="M-PESA">
+                    </p>
+                    <p>
+                        <label for="payment-type">Card</label>
+                        <input type="radio" name="payment" id="payment-type" value="Card">
+                    </p>
+                    
+                </fieldset>
+                <p><b>M-PESA Till Number: 422619</b></p>
+                <fieldset>
+                    <legend>Card</legend>
+                <p>
+                  <label for="card-type">
+                    <span>Card type:</span>
+                  </label>
+                  <select id="card-type" name="usercard">
+                    <option value="none" selected>--None--</option>
+                    <option value="visa">Visa</option>
+                    <option value="mc">Mastercard</option>
+                  </select>
+                </p>
+                
+                <p>
+                  <label for="number">
+                    <span>Card number:</span>
+                    
+                  </label>
+                  <input type="tel" id="number" name="cardnumber">
+                </p>
+                <p>
+                  <label for="card-date">
+                    <span>Expiration Date</span>
+                    
+                    <em>(formatted as mm/dd/yyyy) :</em>
+                  </label>
+                  <input type="date" id="card-date" name="expiration">
+                </p>
+                </fieldset>
+            </section>
+            <section>
+                
+                <button type="submit">Validate Payment</button>
+                <button type="reset">Reset</button>
+                
+            </section>
+
+
+
+        </form>
+
+    </main>
+    <footer class="footer">
+      
+        <ul class="nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="showcases.html">Showcase Hall</a></li>
+            <li><a href="booking.html">Booking</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="guestbook.html">GuestBook</a></li>
+            <li><a href="design.html">Design Summary</a></li>
+            <li><a href="mysite.html">About Me</a></li>
+        </ul>
+    
+    </footer>
+</body>
+</html>

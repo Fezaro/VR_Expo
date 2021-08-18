@@ -1,0 +1,451 @@
+@font-face {
+  font-family: "Anurati";
+  src: url("../fonts/Anurati-Regular.otf");
+}
+
+@font-face {
+  font-family: "AceSans";
+  src: url("../fonts/AceSans-Demo.otf");
+}
+body {
+  margin: 0;
+  /* overflow-x: hidden; */
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* link styles */
+a {
+  text-decoration: none;
+  padding-bottom: .1em;
+}
+a:link {
+    color: #2f52e0; 
+    font: medium;
+  }
+a:visited {
+    color: rgb(165, 42, 42);;
+  }
+a:focus {
+	color: orangered;
+}
+a:hover {
+    color: red;
+  }
+a:active {
+	color: orchid;
+}
+
+/* end link style */
+body {
+  background-color: #F7BF4F;
+  height: 100%;
+  }
+
+.center {
+  width: 70%;
+  margin: 0 auto;
+  
+}
+
+h1 {
+  font-family: "Anurati";
+  font-size:xx-large
+
+}
+p {
+  font-family: "AceSans";
+  font-size: large;
+  font-weight: 700;
+}
+
+#main-nav {
+  background-color: orange;
+  overflow:hidden;
+  width: 100%;
+  
+}
+
+/* navigation styles */
+
+.nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#logo{
+  max-width: 100px;
+  box-shadow: 0 0 20px hsl(78, 100%, 70%);
+}
+
+#main-nav img{
+  float: left;  
+}
+
+#main-nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0 auto;
+  /* width: 50%; */
+}
+
+#main-nav ul li {
+  float: left;
+  font-weight: 700;
+  text-transform: uppercase;
+  
+}
+
+#main-nav ul li a {
+  display: block;
+  padding: 1em;
+  border-left: 2px solid #ba89a8;
+  border-radius: .5em;
+  margin: 1em; 
+  max-width: 1fr;
+
+}
+/* #main-nav ul a:link {
+  color: #2f52e0;
+} */
+
+#main-nav ul a:visited {
+  color: firebrick;
+}
+
+#main-nav ul a:focus {
+color: red;
+border-color: #fff;
+}
+
+#main-nav ul a:hover {
+  color: red;  
+  border-color: #fff;
+}
+#main-nav ul a:active {
+  color: #40e0ff;
+}
+
+.sticky-nav {
+  background-color: rgb(43, 40, 40);
+  padding: 0.2em;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+
+}
+
+.sticky-nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  
+}
+
+.sticky-bar{
+  /* float: left; */
+  position: sticky;
+  /* width: 100%; */
+  top: 0;
+}
+
+.sticky-nav ul li a{
+  display: block;
+  padding: 1em;
+  margin: 5px;
+  align-items: center;
+
+}
+/* main content styles */
+
+#main-content{
+  clear: both; 
+}
+
+.intro {
+  border-radius: 50% 20% / 10% 40%;
+  background: rgb(256,256,256,0.2);
+  padding: 20px;
+}
+.col-two {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 10px;
+  
+  /* height: auto; */
+  /* background-color:   #68606e, #866773, #9d7169, #a1845e; */
+  
+
+}
+
+#intro-pic {
+  width: 40%;
+  flex: 1;
+  border-radius: 10px 100px / 120px;
+  
+  /* margin: 10px;
+  margin-left: 50px; */
+  
+}
+.intro-info {
+  width: 50em; 
+  margin: 20px 20px 50px 30px;
+  
+}
+
+.para-two {
+  width: 50em;
+  margin: 40px 20px 50px 30px;
+  
+}
+
+#second_landing {
+  width: 40%; 
+  flex: 1;
+  border-radius: 10% 30% 50% 70%;
+} */
+
+
+
+#event-schedule{
+  margin: 2em;
+
+}
+#event-schedule td, th{
+  border: black solid 2px;
+  border-radius: 3px;
+  padding: 10px;
+}
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 22px;
+  /* margin: auto; */
+  width: 80%;
+  
+}
+
+.card {
+  display: grid;
+  grid-template-rows: max-content 300px 1fr;
+  border: black 2px solid;
+  border-radius: 3%;
+  box-shadow: 0 0 20px rgba(0,0,0,0.4); 
+  
+}
+.card header, .card-content ,.booth-header, .booth-content{
+  text-align: center;
+}
+
+.card img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 3%;
+  
+}
+
+/* Seats section */
+.tickets, .booking-section {
+  display: flex;
+  justify-content: center;
+  font-size: xx-large;
+  font-weight: 900;
+  margin-bottom: 2em;
+  
+}
+
+/* booking section */
+
+div.booking-section a:hover { 
+  background-color: orangered;
+  color: chartreuse ;
+}
+
+/* footer styles */
+.footer {
+  background-color:rgb(0,0,0,0.8);
+  border-radius: 10px;
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer ul li {
+  float: left;
+  font-weight: 500;
+}
+
+.footer ul li a {
+  display: block;
+  padding: 1em;
+  border-left: gainsboro 1px solid;
+}
+
+ 
+/* Showcase page styles */
+
+
+
+.text-center{
+  text-align: center;
+}
+
+
+.booths {
+  display: flex;
+  flex-direction: column;
+  max-width: 50em;
+  /* grid-template-columns: repeat(auto-fit, minmax(700px, 1fr)) ; */
+  /* gap: 20px; */
+  /* max-width: 45em; */
+  justify-content: center;
+}
+
+.booth{
+  display: grid;
+  grid-template-rows: max-content 400px 1fr ;
+  gap: 20px;
+  background-color: rgb(240,110,205,0.3);
+  border-radius: 40% 20% 20% 40% / 20% 40% 10%;
+  margin: 10px;
+  border: white 2px solid;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.87);
+}
+
+.booth img{
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 50% 20% / 10% 40%;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5); 
+
+}
+.booth p{
+  margin: 5.1em;
+  margin-top:20px
+}
+
+/* form styles */
+
+#ticket-form, #guest-form, #contact-form{
+  border: maroon 2px solid;
+  padding: 2.5em;
+  border-radius: 0.7em;
+  width: 70%;
+  margin: auto;
+  box-shadow:0 0 20px rgb(165, 42, 42,0.5);
+  margin-top: 50px;
+  margin-bottom: 80px;
+}
+
+#ticket-form label, #guest-form label, #contact-form label{
+  /* Uniform size & alignment */
+  display: inline-block;
+  width: 100px;
+  text-align: right;
+  vertical-align: top;
+}
+#ticket-form fieldset{
+  border: lemonchiffon 3px groove;
+  border-radius: 5px;
+  margin: 5px;
+}
+#ticket-form input, #guest-form input, #contact-form input{
+  border-radius: 2px;
+  background-color: rgb(214, 245, 245);
+}
+#ticket-form textarea, #guest-form textarea, #contact-form textarea{
+  border-radius: 2px;
+  background-color: rgb(214, 245, 245);
+  width: 40%;
+}
+
+#ticket-form input:hover, #guest-form input:hover, #ticket-form textarea:hover, #guest-form textarea:hover, #contact-form input, #contact-form textarea{
+  border-color: coral;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.9);
+}
+#ticket-form button, #guest-form button, #contact-form button{
+  border-color: wheat;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(151, 78, 78, 0.9);
+  margin: 3em;
+  font-size: medium;
+  padding: 10px;
+}
+#guest-footer{
+  font-style: italic;
+  font-size: large;
+  font-weight: 700;
+}
+
+/* About me Psge */
+.pic-container{
+  text-align: center;
+}
+#profile-content article{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 60%;
+  flex-wrap: wrap;
+  margin: auto;
+}
+
+#prof-pic{
+  width: 220px;
+  border-radius: 60%;
+  box-shadow: 0 10px 20px rgb(58, 164, 226, 0.9);
+}
+.image-container{
+  width: 250px;
+  
+}
+#profile-content article>*{
+  flex: 300px;
+  margin: 20px;
+  margin-top: 50px;
+}
+
+.image-container img{
+  height: 350px;
+  width:250px;
+  object-fit: cover;
+  border-radius: 20%;
+  margin: 2em;
+}
+
+/* design summary styles */
+#design-content h1{
+  text-decoration:rebeccapurple wavy underline 2px;
+}
+
+/* Portfolio styles */
+.mysite-links{
+  display: flex;
+  justify-content: center;
+  margin: 1.4em;
+}
+#project-links{
+  display: flex;
+  justify-content: center;
+  margin-top: 10em;
+  margin-bottom: 30em;
+}
+#project-links a, .mysite-links a {
+  border: blueviolet solid 5px;
+  border-radius: 10px;
+  padding: 25px;
+  margin: auto;
+  box-shadow: 0 0 30px rgba(209, 123, 190, 0.9);
+}
+.exhibition-link{
+  font-size: x-large;
+  margin: 1.5em;
+}
